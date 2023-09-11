@@ -1,0 +1,21 @@
+#tab
+{
+  text-align: center;
+  background-color: maroon;
+  border: 1px solid black;
+}
+
+#tab thead th
+{
+  color: #fff;
+  font-size: 20px;
+  width: 500px;
+  margin: auto;
+  
+}
+
+#tab tbody tr
+{
+  color: gray;
+}
+

@@ -1,0 +1,206 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    {% comment %}
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    {% endcomment %}
+    <link rel="stylesheet" href="{% static 'app/css/Home.css' %}" />
+    <link rel="stylesheet" href="{% static 'app/css/foot.css'%}" />
+    <link rel="stylesheet" href="{% static 'app/css/About.css'%}" />
+    <link rel="stylesheet" href="{% static 'app/css/admission.css'%}" />
+    <link rel="stylesheet" href="{% static 'app/css/learning.css'%}" />
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="nav">
+      <ul>
+        <li><a href="{% url 'home' %}">HOME</a></li>
+        <li><a href="{% url 'about' %}">ABOUT</a></li>
+        <li><a href="{% url 'admission' %}">ADMISSION</a></li>
+        <li><a href="{% url 'learning' %}">LEARNING</a></li>
+        <li><a href="{% url 'newsevents' %}">NEWS & EVENTS</a></li>
+        <li><a href="{% url 'parents' %}">PARENTS</a></li>
+      </ul>
+    </div>
+
+    {% block content %}
+
+    <section id="main">
+      <div id="box">
+        <div id="content">
+          <h1>Stanford Elementary</h1>
+          <h2>
+            A Great Place <br />
+            to Learn
+          </h2>
+          <h3><a href="">About our school</a></h3>
+        </div>
+        <div id="img">
+          <img src={% static 'app/images/home_img_01.jpg' %} alt="ds">
+        </div>
+      </div>
+
+      <div id="box1">
+        <div id="img1">
+          <img src={% static 'app/images/home_img_02.jpg' %} alt="ds">
+        </div>
+        <div id="content1">
+          <h1>Safety First</h1>
+          <br />
+          <p>
+            Full reopening plans for next year, <br />
+            include a physically-distanced in -<br />person learning model
+          </p>
+          <br />
+          <h3><a href="">Learn more</a></h3>
+        </div>
+      </div>
+      <h1 class="headline">Why Stanford Elementary</h1>
+
+      <div id="box2">
+        <div id="back">
+          <h1>Our Approach</h1>
+          <br />
+          <p>
+            I'm a paragraph. Click here to <br />
+            add your own text and edit me. <br />
+            Let your users get to know you.
+          </p>
+          <br />
+          <h3><a href="">Learn More</a></h3>
+        </div>
+        <div id="content2">
+          <h1>Admission</h1>
+          <br />
+          <p>
+            I'm a paragraph. Click here to <br />
+            add your own text and edit me. <br />
+            Let your users get to know you.
+          </p>
+          <br />
+          <h3><a href="">Enroll Today</a></h3>
+        </div>
+      </div>
+
+      <div id="box3">
+        <div id="back1">
+          <h1>Enhance Learning</h1>
+          <br />
+          <p>
+            I'm a paragraph. Click here to <br />
+            add your own text and edit me. <br />
+            Let your users get to know you.
+          </p>
+          <br />
+          <h3><a href="">All Programs</a></h3>
+        </div>
+        <div id="content2">
+          <h1>Latest News & Events</h1>
+          <br />
+          <p>
+            I'm a paragraph. Click here to <br />
+            add your own text and edit me. <br />
+            Let your users get to know you.
+          </p>
+          <br />
+          <h3><a href="">View All</a></h3>
+        </div>
+        <div id="img2">
+          <img src={% static 'app/images/home_img_05.jpg' %} alt="ds">
+        </div>
+      </div>
+
+      <div id="box3">
+        <div id="content2">
+          <h1>Latest News & Events</h1>
+          <br />
+          <p>
+            I'm a paragraph. Click here to <br />
+            add your own text and edit me. <br />
+            Let your users get to know you.
+          </p>
+          <br />
+          <h3><a href="">View All</a></h3>
+        </div>
+        <div id="img3">
+          <img src={% static 'app/images/home_img_06.jpg' %} alt="ds">
+        </div>
+      </div>
+
+      <h1 class="headline">Stanford Elementary in Numbers</h1>
+
+      <div id="tab">
+        <div>
+          <h1>60</h1>
+          <br />
+          <h5>Years of Excellence</h5>
+        </div>
+        <div>
+          <h1>25</h1>
+          <br />
+          <h5>High Schools Enroll Our Graduates</h5>
+        </div>
+        <div>
+          <h1>45</h1>
+          <br />
+          <h5>Certified Teachers</h5>
+        </div>
+      </div>
+      <div id="tab">
+        <div>
+          <h1>100 <sup>%</sup></h1>
+          <br />
+          <h5>Satisfied Parents</h5>
+        </div>
+        <div><img src={% static 'app/images/home_img_07.jpg' %} alt="ds"></div>
+        <div>
+          <h1>75 <sup>%</sup></h1>
+          <br />
+          <h5>Athleticn Participation</h5>
+        </div>
+      </div>
+    </section>
+
+    {% endblock content %}
+  <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          Stanford Elementary Copyright © 2023 Inferno - All rights reserved ||
+          Designed By: Aniket Bakoriya
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
